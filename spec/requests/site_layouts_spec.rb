@@ -3,7 +3,7 @@ require 'capybara/rspec'
 
 RSpec.describe "SiteLayouts" do
   describe "GET /site_layouts" do
-    it "works! (now write some real specs)" do
+    it "has the help, about and contact links in the root path" do
       get root_path
       # get site_layouts_path
 
