@@ -5,25 +5,25 @@ RSpec.feature "Static pages feature tests", :type => :feature do
   base_title = "Cocogram"
 
   scenario "Visiting the home page" do
-    visit "/static_pages/home"
+    visit "/"
     # expect(page).to have_title "Home | Cocogram"
     expect(page.title).to eq "#{base_title}"
   end
 
   scenario "Visiting the about page" do
-    visit "/static_pages/about"
+    visit "/about"
     expect(page).to have_title "About | #{base_title}"
     # expect(page.title).to eq "Home | Cocogram"
   end
 
   scenario "Visiting the help page" do
-    visit "/static_pages/help"
+    visit "/help"
     expect(page).to have_title "Help | #{base_title}"
     # expect(page.title).to eq "Home | Cocogram"
   end
 
   scenario "Visiting the contact page" do
-    visit "/static_pages/contact"
+    visit "/contact"
     expect(page).to have_title "Contact | #{base_title}"
     # expect(page.title).to eq "Home | Cocogram"
   end
